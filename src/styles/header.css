@@ -1,0 +1,116 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%);
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: aparecerDesdeArriba 1s ease-out;
+    width: 80vw;
+    height:4.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    margin-bottom: 2rem;
+}
+
+.class-logo{
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    color: var(--color-gray-400);
+ 
+}
+.
+
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%);
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: aparecerDesdeArriba 1s ease-out;
+    width: 80vw;
+    height:4.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    margin-bottom: 2rem;
+}
+
+.class-logo{
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+}
+
+
+.nav-header>.link-header:active,
+.nav-header>.link-header:hover,
+.nav-header>.link-header:focus {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+
+@keyframes aparecerDesdeArriba {
+    0% {
+            opacity: 0;
+            transform: translateY(-50px);
+    }
+    100% {
+            opacity: 1;
+            transform: translateY(0);
+    }
+}
+.nav-header>.link-header:active{
+    color: #60a5fa;
+
+}
+
+
+.nav-header>.link-header:hover,
+.nav-header>.link-header:focus {
+    border: none;
+    outline: none;
+    text-decoration: none;
+    color: var(--color-cyan-400);
+}
+
+
+@keyframes aparecerDesdeArriba {
+    0% {
+            opacity: 0;
+            transform: translateY(-50px);
+    }
+    100% {
+            opacity: 1;
+            transform: translateY(0);
+    }
+}

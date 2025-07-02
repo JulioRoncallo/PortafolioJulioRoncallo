@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+
+:root{
+    --color-slate-600: #475569;
+    --color-slate-700: #334155;
+    --color-slate-800: #1e293b;
+    --color-slate-900: #0f172a;
+
+    --color-blue-300: #93c5fd;
+    --color-blue-400: #60a5fa;
+    --color-blue-500: #3b82f6;
+    --color-blue-600: #2563eb;
+    --color-blue-800: #1e40af;
+    --color-blue-900: #1e3a8a;
+
+    --color-cyan-400: #22d3ee;
+    --color-cyan-600: #0891b2;
+    }

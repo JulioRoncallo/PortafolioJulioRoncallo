@@ -1,0 +1,45 @@
+.downloadCV {
+    text-align: center;
+    padding: 4rem 1rem;
+    /* background-color: #0f172a; */
+    color: white;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.titleAccent {
+    color: #38bdf8;
+}
+
+.description {
+    font-size: 1.125rem;
+    color: #cbd5e1;
+    margin-bottom: 3rem;
+}
+
+.downloadButton {
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(to right, #2563eb, #0ea5e9);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.downloadButton:hover {
+    background: linear-gradient(to right, #1e40af, #0284c7);
+}

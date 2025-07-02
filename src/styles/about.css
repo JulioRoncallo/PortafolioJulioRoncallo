@@ -1,0 +1,170 @@
+.about {
+  min-height: 100vh;
+  padding: 0rem 1rem;
+}
+
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+.titleAccent {
+  background: linear-gradient(to right, var(--color-blue-400), var(--color-cyan-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.divider {
+  width: 6rem;
+  height: 0.25rem;
+  background: linear-gradient(to right, var(--color-blue-400), var(--color-cyan-400));
+  margin: 0 auto 2rem;
+}
+
+.mainContent {
+  display: grid;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.storyCard {
+  background: linear-gradient(135deg, rgba(30, 58, 138, 0.5), rgba(8, 145, 178, 0.5));
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.storyTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+.storyText {
+  color: var(--color-gray-300);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.highlightCard {
+  background-color: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.highlightCard:hover {
+  border-color: rgba(96, 165, 250, 0.4);
+  transform: scale(1.05);
+}
+
+.highlightIcon {
+  margin-bottom: 1rem;
+}
+
+.highlightTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: 0.5rem;
+}
+
+.highlightDescription {
+  color: var(--color-gray-400);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.philosophySection {
+  background: linear-gradient(to right, rgba(30, 58, 138, 0.3), rgba(8, 145, 178, 0.3));
+  backdrop-filter: blur(8px);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.philosophyTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.philosophyLabel{
+    color: var(--color-sky-400);
+}
+.philosophyGrid {
+  display: grid;
+  gap: 2rem;
+  text-align: center;
+}
+
+.philosophyItem h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.philosophyItem .innovation {
+  color: var(--color-blue-400);
+}
+
+.philosophyItem .quality {
+  color: var(--color-cyan-400);
+}
+
+.philosophyItem .collaboration {
+  color: var(--color-yellow-400);
+}
+
+.philosophyItem p {
+  color: var(--color-gray-300);
+  font-size: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  .highlightsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .philosophyGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainContent {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

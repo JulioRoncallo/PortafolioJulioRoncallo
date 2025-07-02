@@ -1,0 +1,102 @@
+body{
+    display: flex;
+}
+/* Section nombre */
+
+.section-nombre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.h1-nombre{
+    font-size: 6.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #60a5fa, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.h1-apellido{
+    color: white;
+    font-weight: bold;
+    font-size: 6.5rem;
+}
+
+/* Section perfil */
+
+.section-perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-blue-300) ;
+    font-size: 3.5rem;
+}
+
+.section-perfil>h1{
+    font-size: 3.5rem;
+}
+.section-perfil>h1>span{
+    position: relative;
+    display: inline-block;
+    color: white;
+    height: 1.2em;
+    /* vertical-align: bottom; */
+    overflow: hidden;
+}
+.section-perfil>h1>span>span{
+    display: block;
+    animation: animateWords 4s infinite ease;
+}
+
+@keyframes animateWords{
+    0%    {transform: translateY(0%);}
+    25%   {transform: translateY(-100%);}
+    50%   {transform: translateY(-200%);}
+    75%   {transform: translateY(-300%);}
+    100%  {transform: translateY(-400%);}
+}
+
+
+/*Section mensaje*/
+
+.section-mensaje{
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--color-gray-300);
+    font-size: 2.5rem;
+}
+
+/* Section button */
+.section-botones{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.link-botones{
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    height: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: linear-gradient(to right, #2563eb, #0891b2);
+    color: white;
+    font-weight: bold;
+}
+.link-botones:hover{
+    background: linear-gradient(to right, #1e40af, #0284c7);
+}
+
+.section-botones>.link-botones:active,
+.section-botones>.link-botones,
+.section-botones>Link:focus-visible{
+    border: none;
+    outline: none;
+    box-shadow: none;
+}

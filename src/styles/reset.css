@@ -1,0 +1,72 @@
+
+
+/* Eliminar márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  /* Establecer la tipografía base */
+html {
+    font-size: 12px !important;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    -moz-tab-size: 4;
+    tab-size: 4;
+}
+  /* Evitar estilos de enlaces predeterminados */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+  /* Remover estilos de lista por defecto */
+ul, ol {
+    list-style: none;
+}
+
+  /* Resetear elementos tipográficos */
+h1, h2, h3, h4, h5, h6, p, blockquote, figure {
+    margin: 0;
+}
+
+  /* Ajustes en imágenes y medios */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+  /* Botones sin estilos por defecto */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+  /* Input y textarea con reset */
+input, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+  /* Asegurar accesibilidad en elementos interactivos */
+:focus {
+    outline: 2px solid #000;
+    outline-offset: 2px;
+}
+
+  /* Evitar saltos de línea innecesarios */
+pre, code {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+  /* Cuerpo con altura mínima */
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: #333;
+    background-color: #fff;
+}

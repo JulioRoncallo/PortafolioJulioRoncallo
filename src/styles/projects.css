@@ -1,0 +1,247 @@
+.projects {
+  min-height: 100vh;
+  padding: 0rem 1rem;
+}
+
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+
+.titleAccent {
+  background: linear-gradient(to right, var(--color-blue-400), var(--color-cyan-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.divider {
+  width: 6rem;
+  height: 0.25rem;
+  background: linear-gradient(to right, var(--color-blue-400), var(--color-cyan-400));
+  margin: 0 auto 2rem;
+}
+
+.description {
+  color: var(--color-gray-300);
+  font-size: 1.125rem;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.projectsGrid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.projectCard {
+  background-color: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+.projectCard:hover {
+  border-color: rgba(96, 165, 250, 0.4);
+  transform: scale(1.05);
+}
+
+.projectImage {
+  position: relative;
+  height: 12rem;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(8, 145, 178, 0.2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.projectImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projectCard:hover .projectImage img {
+  transform: scale(1.1);
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(15, 23, 42, 0.8), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectCard:hover .imageOverlay {
+  opacity: 1;
+}
+
+.overlayButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.overlayButton {
+  padding: 0.5rem;
+  background-color: rgba(30, 41, 59, 0.8);
+  border-radius: 50%;
+  color: var(--color-white);
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlayButton:hover {
+  background-color: var(--color-blue-600);
+}
+
+.projectContent {
+  padding: 1.5rem;
+}
+
+.projectName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin-bottom: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.projectCard:hover .projectName {
+  color: var(--color-blue-400);
+}
+
+.projectDescription {
+  color: var(--color-gray-300);
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.technologiesSection {
+  margin-bottom: 1rem;
+}
+
+.technologiesTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-blue-400);
+  margin-bottom: 0.5rem;
+}
+
+.technologiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.technologyTag {
+  padding: 0.25rem 0.5rem;
+  background: linear-gradient(to right, rgba(37, 99, 235, 0.2), rgba(8, 145, 178, 0.2));
+  color: var(--color-blue-300);
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.projectButtons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.projectButton {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.codeButton {
+  background-color: var(--color-slate-700);
+  color: var(--color-white);
+}
+
+.codeButton:hover {
+  background-color: var(--color-blue-600);
+}
+
+.demoButton {
+  background: linear-gradient(to right, var(--color-blue-600), var(--color-cyan-600));
+  color: var(--color-white);
+}
+
+.demoButton:hover {
+  background: linear-gradient(to right, #1d4ed8, #0e7490);
+}
+
+.githubSection {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.githubButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(to right, var(--color-blue-600), var(--color-cyan-600));
+  color: var(--color-white);
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  text-decoration: none;
+}
+
+.githubButton:hover {
+  background: linear-gradient(to right, #1d4ed8, #0e7490);
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projectsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

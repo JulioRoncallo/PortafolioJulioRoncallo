@@ -1,0 +1,74 @@
+.footer {
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(59, 130, 246, 0.2);
+    padding: 2rem 0;
+    /* width: 100vw; */
+    border-radius: 30px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.content {
+    text-align: center;
+}
+
+.madeWith {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.madeWith span {
+    color: var(--color-gray-300);
+}
+
+.heartIcon {
+    color: var(--color-red-400);
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.codeIcon {
+    color: var(--color-blue-400);
+}
+
+.coffeeIcon {
+    color: var(--color-yellow-600);
+}
+
+.copyright {
+    color: var(--color-gray-400);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 1rem;
+    color: var(--color-gray-400);
+}
+
+.separator {
+    color: var(--color-gray-400);
+}
+
+.tech {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.tech p {
+    font-size: 1rem;
+    color: var(--color-gray-500);
+}
