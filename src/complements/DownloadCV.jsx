@@ -1,4 +1,4 @@
-import { Download } from "lucide-react";
+import { Download, Eye } from "lucide-react";
 import "../styles/downloadcv.css";
 
 export default function DownloadCV() {
@@ -12,14 +12,26 @@ export default function DownloadCV() {
             Conoce más sobre mi experiencia y habilidades en detalle.
             </p>
 
+            <div className="button-group">
             <a
-            href="/JulioRoncalloPolo - Desarrollador Fullstack.pdf"
-            download="JulioRoncalloPolo - Desarrollador Fullstack.pdf"
-            className="downloadButton"
+                href="/JulioRoncalloPolo%20-%20Desarrollador%20Fullstack.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="downloadButton"
             >
-            <Download size={20} />
-            Descargar CV Español
+                <Eye size={20} />
+                Ver CV en línea
             </a>
+
+            <a
+                href="/JulioRoncalloPolo%20-%20Desarrollador%20Fullstack.pdf"
+                download="JulioRoncalloPolo - Desarrollador Fullstack.pdf"
+                className="downloadButton"
+            >
+                <Download size={20} />
+                Descargar CV Español
+            </a>
+            </div>
         </div>
         </section>
     );
