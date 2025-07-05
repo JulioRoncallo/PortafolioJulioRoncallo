@@ -24,8 +24,8 @@ export default function DownloadCV() {
             </a>
 
             <a
-                // href="/JulioRoncalloPolo%20-%20Desarrollador%20Fullstack.pdf"
-                download="JulioRoncalloPolo - Desarrollador Fullstack.pdf"
+                href="/JulioRoncalloPolo-DevFullstack.pdf"
+                download="JulioRoncalloPolo-DevFullstack.pdf"
                 className="downloadButton"
             >
                 <Download size={20} />
