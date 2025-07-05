@@ -3,7 +3,8 @@
     backdrop-filter: blur(8px);
     border-top: 1px solid rgba(59, 130, 246, 0.2);
     padding: 2rem 0;
-    /* width: 100vw; */
+    width:80vw;
+    position: relative;
     border-radius: 30px;
     margin-top: 2rem;
     margin-bottom: 1rem;
