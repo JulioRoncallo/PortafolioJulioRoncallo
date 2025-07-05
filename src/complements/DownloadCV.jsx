@@ -2,6 +2,14 @@ import { Download, Eye } from "lucide-react";
 import "../styles/downloadcv.css";
 
 export default function DownloadCV() {
+    const handleDownload = () => {
+        const link = document.createElement("a");
+        link.href = "/JulioRoncalloPolo-DevFullstack.pdf";
+        link.setAttribute("download", "JulioRoncalloPolo-DevFullstack.pdf");
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     return (
         <section className="downloadCV">
         <div className="container">
@@ -23,14 +31,10 @@ export default function DownloadCV() {
                 Ver CV en línea
             </a>
 
-            <a
-                href="/JulioRoncalloPolo-DevFullstack.pdf"
-                download="JulioRoncalloPolo-DevFullstack.pdf"
-                className="downloadButton"
-            >
+            <button onClick={handleDownload} className="downloadButton">
                 <Download size={20} />
                 Descargar CV Español
-            </a>
+            </button>
             </div>
         </div>
         </section>
