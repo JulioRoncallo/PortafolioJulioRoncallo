@@ -72,3 +72,35 @@
     font-size: 1rem;
     color: var(--color-gray-500);
 }
+
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+
+    .footer .container {
+        gap: 0.5rem;
+    }
+
+    .footer .heartIcon,
+    .footer .codeIcon,
+    .footer .coffeeIcon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .footer .copyright,
+    .footer .info,
+    .footer .tech {
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    .footer .separator {
+        margin: 0 4px;
+    }
+}

@@ -16,4 +16,16 @@
 
     --color-cyan-400: #22d3ee;
     --color-cyan-600: #0891b2;
-    }
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

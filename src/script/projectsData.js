@@ -49,7 +49,7 @@ const projectsData = [
         image: imgPortafolio,
         technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript", "EmailJS"],
         github: "https://github.com/julio-roncallo/portfolio",
-        demo: "https://julio-roncallo-portfolio.vercel.app",
+        demo: "https://julioroncallo-portafolio.netlify.app/",
     },
     {
         name: "Proyecto en curso",

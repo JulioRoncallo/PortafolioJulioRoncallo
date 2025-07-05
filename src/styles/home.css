@@ -100,3 +100,42 @@ body{
     outline: none;
     box-shadow: none;
 }
+
+
+/* RESPONSIVE  */
+@media (max-width: 768px) {
+    .section-nombre .h1-nombre,
+    .section-nombre .h1-apellido {
+        font-size: 2rem; /* o ajusta según tu diseño */
+        text-align: center;
+    }
+
+    .section-perfil h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .section-perfil h1 span span {
+        font-size: 1.2rem;
+        display: block;
+        text-align: center;
+    }
+
+    .section-mensaje p {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5;
+        padding: 0 1rem;
+    }
+
+    .section-botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .link-botones {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
