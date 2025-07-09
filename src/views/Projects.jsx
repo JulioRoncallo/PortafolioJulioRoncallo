@@ -3,8 +3,14 @@ import projectsData from "../script/projectsData";
 import "../styles/projects.css"; // Assuming you have a CSS file for styling
 import Header from "../complements/Header"; // Assuming you have a Header component
 import Footer from "../complements/Footer";
+import { useEffect } from "react";
+
+
 
 const Projects = () => {
+  useEffect(() => {
+          window.scrollTo(0, 0);
+      }, []);
   return (
     <section className="projects">
       <Header/>

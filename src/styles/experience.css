@@ -40,7 +40,7 @@
 
 .description {
   color: var(--color-gray-300);
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   max-width: 32rem;
   margin: 0 auto;
 }
@@ -100,6 +100,7 @@
   transition: all 0.3s ease;
   transform: scale(1);
   margin-left: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .experienceCard:hover {
@@ -120,7 +121,7 @@
 }
 
 .position {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--color-white);
   margin-bottom: 0.5rem;
@@ -141,6 +142,7 @@
   color: var(--color-gray-300);
   margin-bottom: 1rem;
   line-height: 1.6;
+ 
 }
 
 .achievementsSection {
@@ -148,7 +150,7 @@
 }
 
 .achievementsTitle {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--color-blue-400);
   margin-bottom: 0.5rem;
@@ -159,7 +161,7 @@
 
 .achievementsList {
   color: var(--color-gray-300);
-  font-size: 0.875rem;
+  font-size: 1rem;
   list-style: none;
   padding: 0;
 }
@@ -169,6 +171,7 @@
   align-items: flex-start;
   gap: 0.5rem;
   margin-bottom: 0.25rem;
+  font-size: 1.2rem;
 }
 
 .achievementBullet {
@@ -177,7 +180,7 @@
 }
 
 .technologiesSection h4 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
   color: var(--color-cyan-400);
   margin-bottom: 0.5rem;
@@ -197,7 +200,40 @@
   border-radius: 9999px;
   border: 1px solid rgba(59, 130, 246, 0.3);
 }
+.cert-invite {
+  margin: 4rem auto 2rem;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.05);
+  max-width: 800px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.cert-invite:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.15);
+}
+
+.cert-invite a {
+  color: var(--color-cyan-400);
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.cert-invite a:hover {
+  color: var(--color-blue-400);
+}
+
+.cert-link {
+  text-decoration: underline;
+  font-weight: 600;
+  color: var(--color-gray-200)
+}
 @media (min-width: 768px) {
   .title {
     font-size: 3rem;

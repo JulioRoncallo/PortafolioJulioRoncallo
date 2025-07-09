@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import '../styles/header.css';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
 
     return (
         <div className='container-header'>
@@ -16,13 +17,29 @@ const Header = () => {
             ☰
         </button>
 
-        <nav className={`nav-header ${menuOpen ? 'open' : ''}`}>
-            <Link className='link-header' to="/" onClick={() => setMenuOpen(false)}>Inicio</Link>
-            <Link className='link-header' to="/about" onClick={() => setMenuOpen(false)}>Sobre Mi</Link>
-            <Link className='link-header' to="/experience" onClick={() => setMenuOpen(false)}>Experiencia</Link>
-            <Link className='link-header' to="/projects" onClick={() => setMenuOpen(false)}>Proyectos</Link>
-            <Link className='link-header' to="/contact" onClick={() => setMenuOpen(false)}>Contacto</Link>
-        </nav>
+
+    <nav className={`nav-header ${menuOpen ? 'open' : ''}`}>
+        {[
+            { to: '/', label: 'Inicio' },
+            { to: '/about', label: 'Sobre Mi' },
+            { to: '/experience', label: 'Experiencia' },
+            { to: '/projects', label: 'Proyectos' },
+            { to: '/contact', label: 'Contacto' },
+        ].map(({ to, label }) => {
+            const isActive = location.pathname === to;
+
+            return (
+            <Link
+                key={to}
+                to={to}
+                onClick={() => setMenuOpen(false)}
+                className={`link-header link-underline ${isActive ? 'link-header-active' : ''}`}
+            >
+                {label}
+            </Link>
+            );
+        })}
+    </nav>
         </div>
     );
     };

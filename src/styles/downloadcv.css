@@ -1,6 +1,6 @@
 .downloadCV {
     text-align: center;
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
     /* background-color: #0f172a; */
     color: white;
 }
@@ -59,7 +59,7 @@
     background-color: #1e3a8a;
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     text-decoration: none;
     font-weight: 500;
     transition: background-color 0.3s ease;

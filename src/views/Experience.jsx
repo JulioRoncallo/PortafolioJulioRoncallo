@@ -1,9 +1,14 @@
 
 import { Calendar, MapPin, Award } from "lucide-react";
 import { experienceData } from "../script/experienceData";
+import { Link } from "react-router-dom";
 import Header from "../complements/Header";
 import  "../styles/experience.css";
 import Footer from "../complements/Footer";
+import Stacks from "../complements/Stacks";
+
+
+
 
 const Experience = () => {
   return (
@@ -80,6 +85,12 @@ const Experience = () => {
           ))}
         </div>
       </div>
+      <section className="cert-invite">
+        <Link to="/certificates">
+          Te invito a revisar mis <span className="cert-link">certificaciones</span> y estudios realizados.<br/> 💻
+        </Link>
+      </section>
+      <Stacks/>
       <Footer/>
     </section>
   );

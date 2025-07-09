@@ -6,8 +6,13 @@ import '../styles/contact.css'
 import Header from "../complements/Header"
 import Footer from "../complements/Footer"
 import { sendEmail } from "../utils/sendEmail"
+import { useEffect } from "react";
 
 export default function Contact() {
+  useEffect(() => {
+          window.scrollTo(0, 0);
+      }, []);
+
   const [isSubmitted, setIsSubmitted] = useState(false)
   const formRef = useRef(null)
   const buttonRef = useRef(null)
@@ -75,7 +80,7 @@ export default function Contact() {
             <div className="availability">
               <div className="availabilityHeader">
                 <div className="statusDot"></div>
-                <h4>Estado Actual</h4>
+                <h4 className="statusDot-h4">Estado Actual</h4>
               </div>
               <p className="availabilityText">Disponible para nuevos proyectos y colaboraciones</p>
             </div>

@@ -39,7 +39,7 @@
 
 .description {
   color: var(--color-gray-300);
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   max-width: 32rem;
   margin: 0 auto;
 }
@@ -89,6 +89,7 @@
   color: var(--color-blue-400);
   text-decoration: none;
   transition: color 0.2s ease;
+  font-size: 1.4rem;
 }
 
 .contactDetails a:hover {
@@ -97,6 +98,7 @@
 
 .contactDetails p {
   color: var(--color-blue-400);
+  font-size: 1.4rem;
 }
 
 .socialSection h4 {
@@ -147,13 +149,15 @@
 }
 
 .statusDot {
-  width: 0.75rem;
-  height: 0.75rem;
+  width:1rem;
+  height:1rem;
   background-color: var(--color-green-400);
   border-radius: 50%;
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
-
+.statusDot-h4{
+  font-size: 1.6rem;
+}
 .availabilityHeader h4 {
   color: var(--color-white);
   font-weight: 600;
@@ -161,7 +165,7 @@
 
 .availabilityText {
   color: #86efac;
-  font-size: 0.875rem;
+  font-size: 1.32rem;
 }
 
 .contactForm h3 {
@@ -182,6 +186,7 @@
   color: var(--color-white);
   font-weight: 600;
   margin-bottom: 0.5rem;
+  font-size: 1.5rem;
 }
 
 .formInput {

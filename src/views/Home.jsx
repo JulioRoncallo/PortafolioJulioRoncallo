@@ -1,9 +1,10 @@
+import '../styles/home.css'
 import { Link } from "react-router-dom"
 import Header from "../complements/Header"
-import '../styles/home.css'
-
 import DownloadCV from "../complements/DownloadCV"
 import Footer from "../complements/Footer"
+import Stacks from "../complements/Stacks"
+
 
 
 const Home = () => {
@@ -34,9 +35,13 @@ const Home = () => {
                     to="/projects"
                     className="link-botones">Ver Proyectos</Link>
                 <Link
+                    to="/certificates"
+                    className="link-botones">Certificados</Link>
+                <Link
                     to="/contact"
                     className="link-botones">Contactar</Link>
             </section>
+            <Stacks/>
             <DownloadCV />
             <Footer />
         </>
