@@ -34,7 +34,7 @@ const projectsData = [
         demo: null,
     },
     {
-        name: "Sistema Web de Reservas de Canchas",
+        name: "Reservas de Canchas-Colombia",
         description:
         "Aplicación para visualizar y gestionar la reserva de canchas deportivas. Incluye galería de imágenes, detalles del lugar y navegación dinámica.",
         image: imgCanchasColombia,
@@ -48,7 +48,7 @@ const projectsData = [
         "Sitio web personal para mostrar experiencia, proyectos y contacto. Desarrollado con Next.js, animaciones con Framer Motion y diseño responsivo.",
         image: imgPortafolio,
         technologies: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript", "EmailJS"],
-        github: "https://github.com/julio-roncallo/portfolio",
+        github: "https://github.com/JulioRoncallo/PortafolioJulioRoncallo",
         demo: "https://julioroncallo-portafolio.netlify.app/",
     },
     {

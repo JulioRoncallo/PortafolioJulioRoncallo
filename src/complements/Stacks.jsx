@@ -1,5 +1,5 @@
 
-import "../styles/stack.css";
+import styles from "../styles/stack.module.css";
 import { FaReact, FaNodeJs, FaHtml5, FaCss3Alt, FaGit, FaJs } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiTypescript, SiPostgresql, SiExpress, SiNextdotjs } from "react-icons/si";
 
@@ -20,18 +20,18 @@ const techStack = [
 
 const Stacks = () => {
     return (
-        <section className="stack-section">
-        <h2 className="stack-title">- Tech Stack -</h2>
-        <div className="carousel">
-            <div className="carousel-track">
-            {techStack.concat(techStack).map((tech, i) => (
-                <div className="tech-card" key={i}>
-                <div className="tech-icon">{tech.icon}</div>
-                <p className="tech-name">{tech.name}</p>
+        <section className={styles["stack-section"]}>
+            <h2 className={styles["stack-title"]}>- Tech Stack -</h2>
+            <div className={styles.carousel}>
+                <div className={styles["carousel-track"]}>
+                {techStack.concat(techStack).map((tech, i) => (
+                    <div className={styles["tech-card"]} key={i}>
+                    <div className={styles["tech-icon"]}>{tech.icon}</div>
+                    <p className={styles["tech-name"]}>{tech.name}</p>
+                    </div>
+                ))}
                 </div>
-            ))}
             </div>
-        </div>
         </section>
     )
 }

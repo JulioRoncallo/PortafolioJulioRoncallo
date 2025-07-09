@@ -61,6 +61,7 @@
 
 .storyText {
   color: var(--color-gray-300);
+  font-size: 1.5rem;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
@@ -91,7 +92,7 @@
 }
 
 .highlightTitle {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--color-white);
   margin-bottom: 0.5rem;
@@ -99,7 +100,7 @@
 
 .highlightDescription {
   color: var(--color-gray-400);
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   line-height: 1.6;
 }
 
@@ -128,9 +129,12 @@
 }
 
 .philosophyItem h4 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
+}
+.descriptionText{
+  font-size: 1.3rem !important;
 }
 
 .philosophyItem .innovation {
@@ -151,6 +155,7 @@
 }
 
 @media (min-width: 640px) {
+
   .highlightsGrid {
     grid-template-columns: repeat(2, 1fr);
   }

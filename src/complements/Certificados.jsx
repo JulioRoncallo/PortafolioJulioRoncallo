@@ -1,6 +1,6 @@
-// src/components/Certificados.jsx
+
+import styles from "../styles/certificados.module.css";
 import { useState } from "react";
-import "../styles/certificados.css";
 import ProgramacionWeb from '../assets/certificados/CursoEspecializacion-ProgramacionWeb_pages-to-jpg-0001.jpg'
 import EspeSQL from '../assets/certificados/CursoEspecializacionSQL_pages-to-jpg-0001.jpg'
 import DiploDDF from '../assets/certificados/DiplomadoDesarrolloFrontendJulioRoncallo_pages-to-jpg-0001.jpg'
@@ -11,7 +11,6 @@ import JSModerno from '../assets/certificados/JulioRoncallo-JavaScript_page-0001
 import FundProg from '../assets/certificados/Mangus Academy-FundamentosProgramación_page-0001.jpg'
 import Bootcamp from '../assets/henry.png'
 import devtalles from '../assets/devtalles.png'
-
 
 const certificados = [
     {
@@ -90,46 +89,52 @@ const Certificados = () => {
 
     return (
 
-        <section className="certificados-principal">
-            
-            <h2 className="certificados-title">Certificados de Estudio</h2>
-    
-            <section className="certificados-section">
-                <div className="certificados-grid">
-                    {certificados.map((cert, index) => (
-                    <div className="certificados-card" key={index}>
-                        <img
+<section className={styles['certificados-principal']}>
+    <h2 className={styles['certificados-title']}>Certificados de Estudio</h2>
+
+    <section className={styles['certificados-section']}>
+        <div className={styles['certificados-grid']}>
+            {certificados.map((cert, index) => (
+                <div className={styles['certificados-card']} key={index}>
+                    <img
                         src={cert.imagen}
                         alt={cert.nombre}
-                        className="certificados-img"
+                        className={styles['certificados-img']}
                         onClick={() => abrirVisor(cert.imagen)}
-                        />
-                        <div className="certificados-info">
-                        <p className="certificados-name">{cert.nombre}</p>
-                        <p className="certificados-meta">
+                    />
+                    <div className={styles['certificados-info']}>
+                        <p className={styles['certificados-name']}>{cert.nombre}</p>
+                        <p className={styles['certificados-meta']}>
                             <strong>Escuela:</strong> {cert.escuela}
                         </p>
-                        <p className="certificados-meta">
+                        <p className={styles['certificados-meta']}>
                             <strong>Fecha:</strong> {cert.fecha}
                         </p>
-                        </div>
                     </div>
-                    ))}
                 </div>
+            ))}
+        </div>
 
-                {imagenSeleccionada && (
-                    <div className="certificados-modal" onClick={cerrarVisor}>
-                    <span className="cerrar">&times;</span>
-                    <img src={imagenSeleccionada} alt="Certificado ampliado" className="modal-img" />
-                    </div>
-                )}
-            </section>
-            <div className="MensajeProteccionDatos">
-                <p>Por motivos de protección de datos personales, he ocultado información sensible en las imágenes de los certificados mostrados.<br/>
-                Si deseas verificar los documentos completos o necesitas más detalles, no dudes en contactarme directamente. Estaré encantado de compartirlos contigo de forma segura.</p>
+        {imagenSeleccionada && (
+            <div className={styles['certificados-modal']} onClick={cerrarVisor}>
+                <span className={styles.cerrar}>&times;</span>
+                <img
+                    src={imagenSeleccionada}
+                    alt="Certificado ampliado"
+                    className={styles['modal-img']}
+                />
             </div>
-            
-        </section>
+        )}
+    </section>
+
+    <div className={styles.MensajeProteccionDatos}>
+        <p>
+            Por motivos de protección de datos personales, he ocultado información sensible en las imágenes de los certificados mostrados.
+            <br />
+            Si deseas verificar los documentos completos o necesitas más detalles, no dudes en contactarme directamente. Estaré encantado de compartirlos contigo de forma segura.
+        </p>
+    </div>
+</section>
     );
 };
 

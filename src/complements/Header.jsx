@@ -1,24 +1,24 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import '../styles/header.css';
+import styles from '../styles/header.module.css';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const location = useLocation();
 
     return (
-        <div className='container-header'>
-        <h3 className='class-logo'>{'{JulioRoncallo.code}'}</h3>
+        <div className={styles['container-header']}>
+        <h3 className={styles['class-logo']}>{'{JulioRoncallo.code}'}</h3>
 
-        <button 
-            className="menu-toggle" 
+        <button
+            className={styles["menu-toggle"]}
             onClick={() => setMenuOpen(!menuOpen)}
         >
             ☰
         </button>
 
 
-    <nav className={`nav-header ${menuOpen ? 'open' : ''}`}>
+    <nav className={`${styles['nav-header']} ${menuOpen ? styles.open : ''}`}>
         {[
             { to: '/', label: 'Inicio' },
             { to: '/about', label: 'Sobre Mi' },
@@ -33,7 +33,11 @@ const Header = () => {
                 key={to}
                 to={to}
                 onClick={() => setMenuOpen(false)}
-                className={`link-header link-underline ${isActive ? 'link-header-active' : ''}`}
+                className={`
+                    ${styles['link-header']}
+                    ${styles['link-underline']}
+                    ${isActive ? styles['link-header-active'] : ''}
+                `}
             >
                 {label}
             </Link>

@@ -1,5 +1,5 @@
 
-import '../styles/certificates.css'
+import styles from '../styles/certificates.module.css'
 import { useEffect } from "react";
 import Footer from "../complements/Footer";
 import Header from "../complements/Header";
@@ -12,14 +12,14 @@ const Certificates = () => {
     return (
         <>
             <section>
-                <main className="certificates-main">
+                <main className={styles["certificates-main"]}>
                 <Header/>
-                <section className="section-titulo">
-                    <h2 className="title">
-                    Certificados <span className="titleAccent">Académicos</span>
+                <section className={styles["section-titulo"]}>
+                    <h2 className={styles.title}>
+                    Certificados <span className={styles.titleAccent}>Académicos</span>
                     </h2>
-                    <div className="divider" />
-                    <p className="cert-description">
+                    <div className={styles.divider }/>
+                    <p className={styles["cert-description"]}>
                     A continuación encontrarás los certificados que respaldan mi formación profesional.  
                     Me encuentro en constante actualización para mantenerme al día con las nuevas tecnologías  
                     del desarrollo web. Si deseas visualizar los certificados con información completa,  
