@@ -39,7 +39,7 @@ const Home = () => {
                     className={styles["link-botones"]}>Certificados</Link>
                 <Link
                     to="/contact"
-                    className={styles["link-botones"]}>Contactar</Link>
+                    className={styles["link-botones"]}>Contactame</Link>
             </section>
             <Stacks/>
             <DownloadCV />

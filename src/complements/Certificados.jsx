@@ -32,16 +32,16 @@ const certificados = [
         imagen: Bootcamp,
     },
     {
-        nombre: "Especialización en Programación Web",
-        escuela: "Netzun - San Ignacio University",
-        fecha: "Noviembre 2024",
-        imagen: ProgramacionWeb,
-    },
-    {
         nombre: "Ingeniero de Sistemas",
         escuela: "La Universidad Del Magdalena",
         fecha: "Septiembre 2024",
         imagen: IngSistemas,
+    },
+    {
+        nombre: "Especialización en Programación Web",
+        escuela: "Netzun - San Ignacio University",
+        fecha: "Noviembre 2024",
+        imagen: ProgramacionWeb,
     },
     {
         nombre: "Especialización en SQL",
